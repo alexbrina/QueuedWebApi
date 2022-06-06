@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Logging;
 using Queued.Domain.Adapters;
-using SimpleQueue.Abstractions;
 using SimpleQueue.Abstractions.Models;
 using System;
 using System.Threading;
@@ -17,7 +16,7 @@ namespace Queued.Application
     internal class WorkUseCase : IWorkUseCase
     {
         private readonly IWorkRepository workRepository;
-        private readonly ISimpleQueue queue;
+        private readonly IQueueAdapter queue;
         private readonly ILogger<WorkUseCase> logger;
 
         private static string Id => $"{DateTime.Now:yyMMddHHmmss}" +
@@ -26,7 +25,7 @@ namespace Queued.Application
 
         public WorkUseCase(
             IWorkRepository workRepository,
-            ISimpleQueue queue,
+            IQueueAdapter queue,
             ILogger<WorkUseCase> logger)
         {
             this.workRepository = workRepository

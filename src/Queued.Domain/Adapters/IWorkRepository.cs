@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace Queued.Domain.Adapters
 {
-    internal interface IWorkRepository
+    public interface IWorkRepository
     {
         Task SaveRequested(Work work);
 

@@ -10,6 +10,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\SimpleQueue\src\SimpleQueue.InMemory\SimpleQueue.InMemory.csproj" />
+    <ProjectReference Include="..\Queued.Domain\Queued.Domain.csproj" />
   </ItemGroup>
 
 </Project>
