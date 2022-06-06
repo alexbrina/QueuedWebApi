@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SimpleQueue\SimpleQueue.Abstractions\SimpleQueue.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\SimpleQueue\src\SimpleQueue.Abstractions\SimpleQueue.Abstractions.csproj" />
   </ItemGroup>
 
 </Project>

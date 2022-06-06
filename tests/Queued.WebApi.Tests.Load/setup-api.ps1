@@ -1,4 +1,4 @@
-$sut_path = "$PSScriptRoot/../Queued.WebApi"
+$sut_path = "$PSScriptRoot/../../src/Queued.WebApi"
 $api_ready_status_url = "http://localhost:5000/work"
 $api_ready_status_max_attempts = 10
 

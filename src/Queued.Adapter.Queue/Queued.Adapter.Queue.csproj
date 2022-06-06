@@ -9,7 +9,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\SimpleQueue\SimpleQueue.InMemory\SimpleQueue.InMemory.csproj" />
+    <ProjectReference Include="..\..\..\SimpleQueue\src\SimpleQueue.InMemory\SimpleQueue.InMemory.csproj" />
   </ItemGroup>
 
 </Project>
