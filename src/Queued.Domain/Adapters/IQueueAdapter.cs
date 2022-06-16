@@ -1,6 +1,5 @@
 ﻿using SimpleQueue.Abstractions;
 using SimpleQueue.Abstractions.Models;
-using System;
 using System.Collections.Generic;
 using System.Threading;
 
@@ -15,7 +14,6 @@ namespace Queued.Domain.Adapters
         void StartConsuming<T>(
             int maxAttempts,
             int instances,
-            IServiceProvider provider,
             CancellationToken cancellationToken)
             where T : ISimpleQueueWorker;
     }

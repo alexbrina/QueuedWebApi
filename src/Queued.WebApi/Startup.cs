@@ -48,9 +48,9 @@ namespace Queued.WebApi
                 endpoints.MapControllers();
             });
 
-            // start 3 consumers that will make 3 max attempts to complete work
+            // there will be 3 max attempts to complete work by 3 consumer instances
             queueAdapter.StartConsuming<ISimpleQueueWorker>(
-                3, 3, serviceProvider, applicationLifetime.ApplicationStopping);
+                3, 3, applicationLifetime.ApplicationStopping);
         }
     }
 }
