@@ -5,7 +5,6 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Queued.Domain.Adapters;
 using SimpleQueue.Abstractions;
-using System;
 
 namespace Queued.WebApi
 {
@@ -30,7 +29,6 @@ namespace Queued.WebApi
             IApplicationBuilder app,
             IWebHostEnvironment env,
             IQueueAdapter queueAdapter,
-            IServiceProvider serviceProvider, 
             IHostApplicationLifetime applicationLifetime)
         {
             if (env.IsDevelopment())

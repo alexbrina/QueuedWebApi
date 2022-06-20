@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace Queued.Adapter.Storage
 {
-    internal sealed class WorkRepository : IWorkRepository
+    internal class WorkRepository : IWorkRepository
     {
         private readonly DbContext context;
 

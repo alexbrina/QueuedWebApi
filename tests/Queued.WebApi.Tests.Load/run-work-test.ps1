@@ -1,5 +1,5 @@
 $concurrent_clients = 48
-$execution_time = "12s"
+$execution_time = "24s"
 
 # run tests
 Write-Output "starting load test..."
